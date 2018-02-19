@@ -1,0 +1,173 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+//reset css
+*{padding:0;margin:0}
+html,body{height:100%}
+body{font-family: 'Nanum Gothic', sans-serif;}
+img {max-width: 100%; vertical-align: top;}
+
+//header
+header {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #EB2641;
+  }
+  nav ul {
+    list-style: none;
+    li {
+      padding: 10px 20px;
+      line-height: 150%;
+      border-top: 1px solid #eee;
+      &:first-child {
+        border-top: none;
+      }
+      a {
+        text-decoration: none;
+        color: #888
+      }
+      &.on{
+        background: rgb(243, 236, 157);
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+// content 
+div.content {
+  height: 100%;
+  section {
+    margin-left: 250px;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    background: #f3776e;
+    &>div {
+      margin: 20px;
+    }
+  }
+}
+//content 안에 두번째 section
+.slide-photo {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  ul{
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        text-decoration: none;
+        top: 230px;
+        font-size: 0;
+      }
+      .imgbox {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        display: none;
+        height: 280px;
+      }
+      &:first-child .imgbox {
+        display: block;
+      }
+      &.on a{
+        background:rgb(243, 236, 157);
+      }
+    }
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    &.prev {
+      left: 0;
+    }
+    &.next {
+      right: 0;
+    }
+  }
+}
+.fade-photo {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  height: 280px;
+  ul {
+    position: relative;
+    width: 500px;
+    height: 280px;
+    overflow: hidden;
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        position: relative;
+        top: 230px;
+        z-index: 1;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        font-size: 0;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      &.on a {
+        background: #e7a042;
+      }
+      &:first-child img {
+        display: block;
+      }
+    }    
+  }
+}
+.movie-view {
+  .view {
+    width: 800px;
+    height: 442px;
+    margin: 30px auto;
+  
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 200px;
+      height: 110px;
+      margin-right: 10px;
+      overflow: hidden;
+
+    }
+  }
+}
+
+
+
+
+
+
+

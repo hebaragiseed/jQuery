@@ -1,0 +1,201 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+header {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px;
+  color: #EB2641;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 10px 20px;
+  line-height: 150%;
+  border-top: 1px solid #eee;
+}
+
+header nav ul li:first-child {
+  border-top: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #888;
+}
+
+header nav ul li.on {
+  background: #f3ec9d;
+}
+
+header nav ul li.on a {
+  color: #000;
+}
+
+div.content {
+  height: 100%;
+}
+
+div.content section {
+  margin-left: 250px;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  background: #f3776e;
+}
+
+div.content section > div {
+  margin: 20px;
+}
+
+.slide-photo {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-photo ul {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slide-photo ul li {
+  display: inline-block;
+}
+
+.slide-photo ul li a {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  text-decoration: none;
+  top: 230px;
+  font-size: 0;
+}
+
+.slide-photo ul li .imgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  height: 280px;
+}
+
+.slide-photo ul li:first-child .imgbox {
+  display: block;
+}
+
+.slide-photo ul li.on a {
+  background: #f3ec9d;
+}
+
+.slide-photo button {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.slide-photo button.prev {
+  left: 0;
+}
+
+.slide-photo button.next {
+  right: 0;
+}
+
+.fade-photo {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  height: 280px;
+}
+
+.fade-photo ul {
+  position: relative;
+  width: 500px;
+  height: 280px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.fade-photo ul li {
+  display: inline-block;
+}
+
+.fade-photo ul li a {
+  position: relative;
+  top: 230px;
+  z-index: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 0;
+}
+
+.fade-photo ul li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.fade-photo ul li.on a {
+  background: #e7a042;
+}
+
+.fade-photo ul li:first-child img {
+  display: block;
+}
+
+.movie-view .view {
+  width: 800px;
+  height: 442px;
+  margin: 30px auto;
+}
+
+.movie-view ul {
+  list-style: none;
+  text-align: center;
+}
+
+.movie-view ul li {
+  display: inline-block;
+  width: 200px;
+  height: 110px;
+  margin-right: 10px;
+  overflow: hidden;
+}
